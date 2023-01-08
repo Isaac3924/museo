@@ -16,4 +16,10 @@ RSpec.describe Photograph do
             expect(photograph).to be_a(Photograph)
         end
     end
+
+    describe 'can call attributes' do
+        it '#photograph.id' do
+            expect(photograph.id).to eq("1")
+        end
+    end
 end
