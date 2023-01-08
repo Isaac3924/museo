@@ -9,5 +9,11 @@ RSpec.describe Photograph do
         year: "1954"
     }
 
-    
+    let(:photograph) = Photograph.new(attributes)
+
+    describe 'can initialize' do
+        it 'is a photgraph' do
+            expect(photograph).to be_a(Photograph)
+        end
+    end
 end
