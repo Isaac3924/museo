@@ -12,4 +12,8 @@ class Artist
         @died = attributes[:died][:died]
         @country = attributes[:country][:country]
     end
+
+    def age_at_death
+        @died.to_i - @born.to_i
+    end
 end
