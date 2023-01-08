@@ -21,5 +21,17 @@ RSpec.describe Photograph do
         it '#photograph.id' do
             expect(photograph.id).to eq("1")
         end
+
+        it '#photograph.name' do
+            expect(photograph.name).to eq("Rue Mouffetard, Paris (Boy with Bottles)")
+        end
+
+        it '#photograph.artist_id' do
+            expect(photograph.artist_id).to eq("4")
+        end
+
+        it '#photograph.year' do
+            expect(photograph.year).to eq("1954")
+        end
     end
 end

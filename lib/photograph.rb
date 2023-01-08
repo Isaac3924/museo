@@ -6,5 +6,8 @@ class Photograph
 
     def initialize(attributes)
         @id = attributes[:id][:id]
+        @name = attributes[:name][:name]
+        @artist_id = attributes[:artist_id][:artist_id]
+        @year = attributes[:year][:year]
     end
 end
